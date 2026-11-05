@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AKP Group – Turn Your Dream to Reality</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#0e0d0c;--bg2:#171513;--card:#1d1a17;--line:#35302a;--text:#f1ebe0;--mute:#b3a998;--gold:#d4a24c;--amber:#f0b45a;--green:#6fae6a;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.65}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:700;line-height:1.15;margin:0 0 .5em}
+h2{font-size:clamp(1.8rem,5vw,2.6rem)}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(14,13,12,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+.logo{font-family:'Playfair Display',Georgia,serif;font-weight:700;letter-spacing:.04em;color:var(--gold);text-decoration:none}
+nav .links{display:flex;gap:18px;font-size:.9rem;color:var(--mute);overflow-x:auto}
+nav .links a{text-decoration:none;white-space:nowrap}
+nav .links a:hover{color:var(--amber)}
+.hero{background:radial-gradient(ellipse at 80% 0%,rgba(240,180,90,.22),transparent 55%),radial-gradient(ellipse at 0% 100%,rgba(111,174,106,.12),transparent 50%),var(--bg);padding:96px 0 80px}
+.hero h1{font-size:clamp(2.6rem,9vw,5rem);max-width:12ch;color:var(--text)}
+.hero p.tag{font-family:'Playfair Display',Georgia,serif;font-style:italic;color:var(--amber);font-size:1.3rem;margin:0 0 14px}
+.hero p.sub{max-width:520px;color:var(--mute);font-size:1.05rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;font-weight:600;text-decoration:none;border:1px solid var(--gold)}
+.btn.gold{background:linear-gradient(135deg,var(--gold),var(--amber));color:#1a1307;border-color:transparent}
+.btn.wa{background:var(--green);border-color:transparent;color:#0b1a0a}
+.btn:focus-visible,a:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:36px;color:var(--mute);font-size:.9rem}
+.facts span{border-left:2px solid var(--gold);padding-left:10px}
+.alt{background:var(--bg2)}
+.founder{display:grid;gap:36px;align-items:center}
+@media(min-width:800px){.founder{grid-template-columns:1fr 1.1fr}.svc{grid-template-columns:1fr 1fr!important}.gal{grid-template-columns:1.4fr 1fr!important}}
+.portrait{aspect-ratio:4/5;border-radius:6px;border:1px solid var(--gold);background:radial-gradient(circle at 70% 20%,rgba(240,180,90,.35),transparent 50%),linear-gradient(160deg,#26221d,#0b0a09);display:flex;flex-direction:column;justify-content:flex-end;padding:22px}
+.portrait b{font-family:'Playfair Display',Georgia,serif;font-size:1.6rem;color:var(--gold);font-weight:500}
+.portrait small{color:var(--mute)}
+.quote{font-family:'Playfair Display',Georgia,serif;font-style:italic;color:var(--amber);font-size:1.4rem;margin:20px 0}
+.goals{list-style:none;padding:0;margin:18px 0 0}
+.goals li{padding:9px 0 9px 34px;position:relative;border-bottom:1px solid var(--line)}
+.goals li::before{content:"✓";position:absolute;left:0;top:9px;width:22px;height:22px;border-radius:50%;background:var(--green);color:#0b1a0a;font-size:.8rem;display:grid;place-items:center;font-weight:700}
+.svc{display:grid;gap:20px;grid-template-columns:1fr;margin-top:28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:28px}
+.card h3{font-size:1.5rem}
+.price{font-family:'Playfair Display',Georgia,serif;color:var(--gold);font-size:2.2rem;margin:6px 0 12px}
+.price small{font-family:Inter,sans-serif;font-size:.9rem;color:var(--mute)}
+.card p{color:var(--mute);margin:0 0 18px}
+.trust{display:grid;gap:18px;margin-top:28px}
+@media(min-width:700px){.trust{grid-template-columns:repeat(3,1fr)}}
+.trust div{border-top:2px solid var(--gold);padding-top:14px}
+.trust h3{font-size:1.2rem}
+.trust p{margin:0;color:var(--mute);font-size:.95rem}
+.gal{display:grid;gap:16px;grid-template-columns:1fr;margin-top:28px}
+.hq{min-height:300px;border-radius:6px;border:1px solid var(--line);background:linear-gradient(180deg,#2b2a28 0%,#171513 60%,#1f2a1d 100%);position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:20px}
+.hq::before{content:"";position:absolute;left:12%;right:12%;top:18%;bottom:30%;background:repeating-linear-gradient(90deg,rgba(240,180,90,.14) 0 2px,transparent 2px 36px),linear-gradient(#3a3835,#242220);border:1px solid var(--line)}
+.hq span,.side span{position:relative;color:var(--mute);font-size:.9rem}
+.side{display:grid;gap:16px}
+.side div{min-height:140px;border-radius:6px;border:1px solid var(--line);background:var(--card);padding:18px;display:flex;flex-direction:column;justify-content:flex-end}
+.side b{color:var(--gold);font-family:'Playfair Display',Georgia,serif;font-size:1.15rem}
+.contact dl{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;margin:24px 0}
+.contact dt{color:var(--gold);font-weight:600}
+.contact dd{margin:0;color:var(--mute)}
+.contact dd a{color:var(--text)}
+footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:var(--mute);font-size:.85rem}
+.wafab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:6;width:56px;height:56px;border-radius:50%;background:var(--green);display:grid;place-items:center;font-weight:700;color:#0b1a0a;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.5)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#top">AKP GROUP</a><div class="links"><a href="#about">Founder</a><a href="#services">Services</a><a href="#trust">Trust</a><a href="#hq">HQ</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<p class="tag">Turn Your Dream to Reality</p>
+<h1>Dream Big, Build Bigger</h1>
+<p class="sub">AKP Group is a tech startup from Ghasipura, Keonjhar, building AI, networking and software solutions for ambitious people and businesses.</p>
+<div class="btns"><a class="btn wa" href="https://wa.me/916371987673?text=Hello%20AKP%20Group%2C%20I%20want%20to%20know%20more." target="_blank" rel="noopener">Chat on WhatsApp</a><a class="btn gold" href="#services">See services</a></div>
+<div class="facts"><span>Real headquarters near Ghasipura Bus Stand</span><span>1 year of transparent work</span><span>Open 5:00 AM – 10:00 PM</span></div>
+</div></header>
+
+<section id="about" class="alt"><div class="wrap founder">
+<div class="portrait" role="img" aria-label="Founder portrait placeholder"><b>Ashish Kumar Puhan</b><small>Founder, AKP Group</small></div>
+<div>
+<h2>Meet the founder</h2>
+<p>Ashish Kumar Puhan started AKP Group one year ago with a simple belief: a young founder from a small town can build a serious technology company. He works from a real office, in front of real clients, with a plan written on the wall.</p>
+<p class="quote">“Dream Big, Build Bigger”</p>
+<ul class="goals"><li>Start AI Startup</li><li>Grow Business</li><li>Be Successful</li></ul>
+</div></div></section>
+
+<section id="services"><div class="wrap">
+<h2>What we do</h2>
+<p style="color:var(--mute);max-width:560px">Two focused services, with clear monthly prices and no hidden charges.</p>
+<div class="svc">
+<div class="card"><h3>Networking and Portfolio Making</h3><div class="price">₹5 Lakhs<small> / month</small></div><p>We build your professional network and a strong portfolio that shows your work to the right people.</p><a class="btn gold" href="https://wa.me/916371987673?text=I%20am%20interested%20in%20Networking%20and%20Portfolio%20Making" target="_blank" rel="noopener">Ask about this</a></div>
+<div class="card"><h3>Software Management</h3><div class="price">₹3 Lakhs<small> / month</small></div><p>We plan, run and maintain your software so your team can focus on growing the business.</p><a class="btn gold" href="https://wa.me/916371987673?text=I%20am%20interested%20in%20Software%20Management" target="_blank" rel="noopener">Ask about this</a></div>
+</div></div></section>
+
+<section id="trust" class="alt"><div class="wrap">
+<h2>Why trust us</h2>
+<p style="color:var(--mute);max-width:600px">Most people do not trust online deals, and they are right to be careful. So we build trust first.</p>
+<div class="trust">
+<div><h3>A real headquarters</h3><p>Our campus is in Ghasipura. Visit us any day before you decide anything.</p></div>
+<div><h3>Transparent dealings</h3><p>Prices, scope and terms are explained clearly before work begins.</p></div>
+<div><h3>Reachable every day</h3><p>Call or message us between 5:00 AM and 10:00 PM, and talk to the founder directly.</p></div>
+</div></div></section>
+
+<section id="hq"><div class="wrap">
+<h2>Headquarters</h2>
+<p style="color:var(--mute)">Innovation. Sustainability. Open for visitors.</p>
+<div class="gal">
+<div class="hq" role="img" aria-label="AKP Group headquarters illustration"><span>A multi-storey glass and concrete campus with the AKP GROUP logo on the rooftop and gate.</span></div>
+<div class="side">
+<div><b>Solar-powered roofs</b><span>Clean energy across the campus.</span></div>
+<div><b>Landscaped gardens</b><span>Green spaces around the offices.</span></div>
+<div><b>Guarded gate</b><span>Security at the entrance, main road in front.</span></div>
+</div></div></div></section>
+
+<section id="contact" class="alt contact"><div class="wrap">
+<h2>Visit or contact us</h2>
+<dl>
+<dt>Owner</dt><dd>Ashish Kumar Puhan</dd>
+<dt>Phone</dt><dd><a href="tel:+916371987673">6371987673</a></dd>
+<dt>WhatsApp</dt><dd><a href="https://wa.me/916371987673" target="_blank" rel="noopener">6371987673</a></dd>
+<dt>Email</dt><dd><a href="mailto:akp26ashish@gmail.com">akp26ashish@gmail.com</a></dd>
+<dt>Address</dt><dd>Near Bus Stand, Ghasipura, Keonjhar, Odisha</dd>
+<dt>Hours</dt><dd>5:00 AM – 10:00 PM, every day</dd>
+<dt>Instagram</dt><dd><a href="https://instagram.com/akp.group_official" target="_blank" rel="noopener">@akp.group_official</a></dd>
+</dl>
+<div class="btns"><a class="btn wa" href="https://wa.me/916371987673?text=Hello%20AKP%20Group" target="_blank" rel="noopener">Message on WhatsApp</a><a class="btn gold" href="tel:+916371987673">Call now</a></div>
+</div></section>
+
+<footer>© AKP Group, Ghasipura, Keonjhar, Odisha. Turn Your Dream to Reality.</footer>
+<a class="wafab" href="https://wa.me/916371987673" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WA</a>
+</body>
+</html>
